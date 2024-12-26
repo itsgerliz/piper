@@ -1,0 +1,15 @@
+[package]
+name = "piper"
+version = "1.0.0"
+edition = "2021"
+description = "Send data through a TCP/IP tunnel"
+license = "MIT"
+authors = ["itsgerliz"]
+
+[dependencies]
+clap = { version = "4.5.21", features = ["derive"] }
+crossterm = "0.28.1"
+
+[profile.release-stripped]
+inherits = "release"
+strip = true
